@@ -1,0 +1,7 @@
+# Ignore everything in repository root 
+/*
+
+# Files to not ignore
+!/.gitignore
+!/nvim
+!/kitty
