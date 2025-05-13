@@ -2,48 +2,59 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "blocks": [
     {
+      "type": "prompt",
       "alignment": "left",
       "segments": [
         {
-          "foreground": "#f01a1a",
-          "style": "plain",
+          "properties": {
+            "cache_duration": "none"
+          },
           "template": "@{{ .UserName }} ",
-          "type": "session"
+          "foreground": "#f01a1a",
+          "type": "session",
+          "style": "plain"
         },
         {
-          "foreground": "#2462f2",
           "properties": {
+            "cache_duration": "none",
             "style": "full"
           },
-          "style": "plain",
           "template": "{{ .Path }}",
-          "type": "path"
+          "foreground": "#2462f2",
+          "type": "path",
+          "style": "plain"
         },
         {
-          "foreground": "#b072f7",
           "properties": {
-            "branch_icon": ""
+            "branch_icon": "",
+            "cache_duration": "none"
           },
-          "style": "plain",
           "template": " <#ff9500>git:</>{{ .HEAD }}</>",
-          "type": "git"
+          "foreground": "#b072f7",
+          "type": "git",
+          "style": "plain"
         },
         {
-          "foreground": "#DCB977",
-          "style": "plain",
+          "properties": {
+            "cache_duration": "none"
+          },
           "template": " ERROR",
-          "type": "status"
+          "foreground": "#DCB977",
+          "type": "status",
+          "style": "plain"
         },
         {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\n❯",
           "foreground": "#f01a1a",
           "type": "text",
-          "style": "plain",
-          "template": "\n❯"
+          "style": "plain"
         }
-      ],
-      "type": "prompt"
+      ]
     }
   ],
-  "final_space": true,
-  "version": 2
+  "version": 3,
+  "final_space": true
 }
