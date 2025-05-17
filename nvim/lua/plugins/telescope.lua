@@ -3,7 +3,6 @@ return {
         "nvim-telescope/telescope.nvim",
         tag = "0.1.8",      -- or use branch = "0.1.x"
         dependencies = { "nvim-lua/plenary.nvim" },
-        event = "CmdlineEnter", -- lazy‑load when you first hit `:` (optional)
         config = function()
             local telescope = require("telescope")
             local actions   = require("telescope.actions")
