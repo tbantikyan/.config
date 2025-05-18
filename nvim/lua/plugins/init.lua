@@ -11,6 +11,7 @@ return {
     -- Coding
     { import = "plugins.lsp" },
     { import = "plugins.completions" },
+    { import = "plugins.dap" },
     { import = "plugins.treesitter" },
     { import = "plugins.autopairs" },
     { import = "plugins.minicomment" },
