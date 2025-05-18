@@ -1,7 +1,7 @@
 return {
     {
         "nvim-telescope/telescope.nvim",
-        tag = "0.1.8",      -- or use branch = "0.1.x"
+        tag = "0.1.8", -- or use branch = "0.1.x"
         dependencies = { "nvim-lua/plenary.nvim" },
         config = function()
             local telescope = require("telescope")
@@ -29,10 +29,9 @@ return {
 
 
             vim.keymap.set('n', '<leader>pf', builtin.find_files, { desc = 'Find files (telescope)' })
+            vim.keymap.set('n', '<leader>ps', builtin.live_grep, { desc = "Find files by string (telescope)" })
+            vim.keymap.set('n', '<leader>pr', builtin.resume, { desc = "View previous search (telescope)" })
             vim.keymap.set('n', '<C-p>', builtin.git_files, { desc = 'Find repo. files (telescope)' })
-            vim.keymap.set('n', '<leader>ps', function()
-                builtin.grep_string({ search = vim.fn.input("Grep > ") });
-            end, { desc = "Find files by string (telescope)" })
         end,
     },
 }
