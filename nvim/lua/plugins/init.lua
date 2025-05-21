@@ -1,6 +1,7 @@
 return {
     -- Editor
-    { import = "plugins.everforest" },
+    -- { import = "plugins.colorscheme.everforest" },
+    { import = "plugins.colorscheme.gruvbox-material" },
     { import = "plugins.telescope" },
     { import = "plugins.undotree" },
     { import = "plugins.fugitive" },
