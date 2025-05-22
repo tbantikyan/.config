@@ -69,6 +69,8 @@ return {
                         { desc = "Rename symbol", buffer = event.buf })
                     vim.keymap.set('n', 'ge', '<cmd>lua vim.lsp.buf.code_action()<cr>',
                         { desc = "Display code actions available at current position", buffer = event.buf })
+                    vim.keymap.set('n', 'gf', '<cmd>lua vim.diagnostic.open_float()<cr>',
+                        { desc = "Display diagnostic message in floating window", buffer = event.buf })
                     vim.keymap.set('n', '<leader>fm', vim.lsp.buf.format, { desc = 'Format buffer (LSP)' })
                 end,
             })
