@@ -1236,12 +1236,11 @@ tab_title_template "{fmt.fg.red}{bell_symbol}{activity_symbol}{fmt.fg.tab}{tab.l
 
 #: Template to use for active tabs. If not specified falls back to
 #: tab_title_template.
-
-active_tab_foreground   #eee
-active_tab_background   #2f2f2f
+# active_tab_foreground   #eee
+# active_tab_background   #2f2f2f
 active_tab_font_style   bold
-inactive_tab_foreground #aaa
-inactive_tab_background #1e2225
+# inactive_tab_foreground #aaa
+# inactive_tab_background #1e2225
 # inactive_tab_font_style normal
 
 #: Tab bar colors and styles.
@@ -1261,9 +1260,8 @@ inactive_tab_background #1e2225
 #: }}}
 
 #: Color scheme {{{
-
-foreground #d0c6ad
-background #1e2225
+# foreground #d0c6ad
+# background #1e2225
 
 #: The foreground and background colors.
 
@@ -2721,3 +2719,9 @@ map cmd+9 goto_tab 9
 #: }}}
 
 #: }}}
+
+
+# BEGIN_KITTY_THEME
+# Everforest Dark Hard
+include current-theme.conf
+# END_KITTY_THEME
